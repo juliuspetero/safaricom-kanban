@@ -1,3 +1,4 @@
+// Apollo Server uses type definitions to define the schema of the GraphQL API. 
 export const typeDefs = `#graphql
     type Task {
         id: ID!

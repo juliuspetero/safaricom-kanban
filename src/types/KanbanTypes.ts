@@ -1,3 +1,4 @@
+//Application type definitions
 export interface Task {
     id: string;
     title: string;
@@ -9,3 +10,8 @@ export interface Column {
     title: string;
     tasks: Task[];
 };
+
+export interface Datasets{
+    columns: Column[];
+    tasks: Task[];
+}

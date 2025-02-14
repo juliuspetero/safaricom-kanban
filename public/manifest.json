@@ -1,0 +1,26 @@
+{
+  "name": "Safaricom Kanban Board",
+  "short_name": "SAFKB",
+  "theme_color": "#8936FF",
+  "background_color": "#333333",
+  "start_url": "/",
+  "id": "SAFKB",
+  "display": "standalone",
+  "description": "A simple kanban board for managing tasks. It works smoothly on any device, even offline, giving you a great browsing experience.",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "icon512_maskable.png",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.jpg",
+      "type": "image/jpg",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    }
+  ]
+}
