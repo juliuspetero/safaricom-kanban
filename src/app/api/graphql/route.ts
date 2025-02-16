@@ -1,1 +1,1 @@
-export { GET, POST } from '@/graphql/server/apolloServer';
+export {GET, POST} from '@/graphql/server/apolloServer';

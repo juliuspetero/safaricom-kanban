@@ -1,3 +1,4 @@
+// Purpose: Define the queries and mutations for the GraphQL client.
 import { gql } from "@apollo/client"
 
 const GraphQueries= {
