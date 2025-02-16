@@ -1,3 +1,6 @@
+// Note: This file is used to create a custom theme for the Material-UI components. 
+// It also imports the Roboto font from Google Fonts and applies it to the theme. 
+// The theme is then exported to be used in the globally
 'use client';
 import { createTheme } from '@mui/material/styles';
 import { Roboto } from 'next/font/google';

@@ -2,6 +2,9 @@
 import { Column, Datasets } from '@/types/KanbanTypes';
 import fs from 'fs';
 import path from 'path';
+import logger from '@/utils/logger';
+
+// Json file path to store the Kanban board columns and tasks
 const filePath = path.join(process.cwd(), 'public', '__datasets__.json');
 
 const readJsonFile = (filePath: string): Datasets => {
@@ -10,7 +13,7 @@ const readJsonFile = (filePath: string): Datasets => {
       const jsonData: Datasets = JSON.parse(data);
       return jsonData;
     } catch (error) {
-      console.error('Error reading JSON file:', error);
+        logger.error('Error reading JSON file:', error);
       throw error;
     }
 };
@@ -21,9 +24,9 @@ const updateJsonFile = (filePath: string, updateFn: (data: Datasets) => Datasets
       const jsonData: Datasets = JSON.parse(data);
       const updatedData = updateFn(jsonData);
       fs.writeFileSync(filePath, JSON.stringify(updatedData, null, 2), 'utf8');
-      console.log('JSON file has been updated successfully.');
+      logger.info('JSON file has been updated successfully.');
     } catch (error) {
-      console.error('Error updating JSON file:', error);
+        logger.error('Error updating JSON file:', error);
     }
   };
 export const resolvers = {

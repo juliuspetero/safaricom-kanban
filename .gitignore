@@ -15,9 +15,8 @@
 
 # next.js
 /.next/
-/out/
-./public/sw.js
-./public/workbox-*.js
+public/workbox-*.js
+public/sw.js
 
 # production
 /build
@@ -41,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+logs

@@ -1,3 +1,4 @@
+// Make apollo provider to wrap the app with apollo client and accessible globally
 "use client";
 import { ApolloProvider } from '@apollo/client';
 import apolloClient from './apolloClient';

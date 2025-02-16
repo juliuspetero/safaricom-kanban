@@ -5,5 +5,11 @@
       "title": "To-Dos"
     }
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Create a reusable button component",
+      "columnId": "1"
+    }
+  ]
 }
