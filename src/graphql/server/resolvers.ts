@@ -43,7 +43,7 @@ export const resolvers = {
         },    
         addColumn: (_ : unknown, args: { title: string; }) => {
             const datasets = readJsonFile(filePath);
-            const newColumn : Column = {id: String(datasets.columns.length + 1), title: args.title};
+            const newColumn : Column = {id: String(datasets.columns.length + 1), title: args.title, tasks: []};
             datasets.columns.push(newColumn);
             updateJsonFile(filePath, () => datasets);
             return newColumn;
