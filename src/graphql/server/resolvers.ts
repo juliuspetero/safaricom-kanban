@@ -38,9 +38,9 @@ export const resolvers = {
             datasets.columns.map(column => column.id === args.id ? Object.assign(column, {title: args.title}) : column);
             return column;
         },
-        moveTask: (_ : any, args: { id: string; sourceColumnId: string; destinationColumnId: string; }) => {
-            const task = datasets.tasks.find(task => task.id === args.id);
-            datasets.tasks.map(task => task.id === args.id ? Object.assign(task, {columnId: args.destinationColumnId}) : task);
+        moveTask: (_ : any, args: { taskId: string; columnId: string }) => {
+            const task = datasets.tasks.find(task => task.id === args.taskId);
+            datasets.tasks.map(task => task.id === args.taskId ? Object.assign(task, {columnId: args.columnId}) : task);
             return task;
         }
     }

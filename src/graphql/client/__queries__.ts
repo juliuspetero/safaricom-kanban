@@ -58,8 +58,8 @@ const GraphQueries= {
             }
         }`,
         MOVE_TASK_MUTATION: gql`
-        mutation MoveTaskMutation($id: ID!, $sourceColumnId: ID!, $destinationColumnId: ID!) {
-            moveTask(id: $id, sourceColumnId: $sourceColumnId, destinationColumnId: $destinationColumnId) {
+        mutation MoveTaskMutation($taskId: ID!, $columnId: ID!) {
+            moveTask(taskId: $taskId, columnId: $columnId) {
                 id
                 title
                 columnId

@@ -16,12 +16,12 @@ export const typeDefs = `#graphql
     }
 
     type Mutation {
-        addTask(title: String!, columnID: ID!): Task!
+        addTask(title: String!, columnId: ID!): Task!
         deleteTask(id: ID!): Task!
         updateTask(id: ID!, title: String!): Task!
         addColumn(title: String!): Column!
         deleteColumn(id: ID!): Column!
         updateColumn(id: ID!, title: String!): Column!
-        moveTask(id: ID!, sourceColumnId: ID!, destinationColumnId: ID!): Task!
+        moveTask(taskId: ID!, columnId: ID!): Task!
     }
 `;
